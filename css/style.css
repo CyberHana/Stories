@@ -1,66 +1,103 @@
 body {
-  font-family: "Segoe UI", sans-serif;
-  background: #f8f8f8;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
   margin: 0;
   padding: 0;
 }
+
+/* LOGIN oynasi */
+#loginSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+
+.login-box input,
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 40px auto;
   background: white;
+  border: 2px solid black;
+  border-radius: 15px;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-h1 {
-  text-align: center;
-}
-input,
-textarea,
-button {
-  width: 100%;
-  margin-top: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 1em;
-}
-button {
-  background: #000000;
-  color: white;
-  border: none;
-  cursor: pointer;
+
+.top-row {
   display: flex;
-  margin-right: 20px;
+  border-bottom: 2px solid #000;
 }
-button:hover {
-  background: #0e0ebc;
-}
-.story-item {
+
+.tab {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
   padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  background-color: #f0f8ff;
+  border-right: 1px solid #000;
 }
-.story-item h4 {
-  margin: 0;
+
+.tab:last-child {
+  border-right: none;
+}
+
+.story {
+  background: #3399ff;
+  color: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.story img {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.bottom-row {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.bottom-btn {
+  background: #3399ff;
+  color: white;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
 }
-.story-actions {
-  margin-top: 5px;
+
+#newStoryForm {
+  margin-top: 20px;
 }
-.story-actions button {
-  width: auto;
-  margin-right: 5px;
-  padding: 5px 10px;
-  font-size: 0.9em;
-}
-.back-button {
-  margin-top: 10px;
-  background: #aaa;
-}
-#storyDisplay {
-  white-space: pre-wrap;
-  margin-top: 15px;
+
+#newStoryForm input,
+#newStoryForm textarea,
+#newStoryForm button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
 }

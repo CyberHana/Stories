@@ -2,24 +2,31 @@
 <html lang="uz">
   <head>
     <meta charset="UTF-8" />
-    <title>Hikoya Sayti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hikoyalar</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>📚 Xush kelibsiz!</h1>
-      <p>Bu sizning shaxsiy hikoya daftaringiz.</p>
-      <a
-        class="btn"
-        style="
-          text-decoration: none;
-          font-size: 25px;
-          padding-top: 50px;
-          display: flex;
-        "
-        href="stories.html"
-        >📖 Hikoyalarni boshqarish</a
-      >
+      <div class="top-row">
+        <div class="tab">Xikoyalar</div>
+        <div class="tab">O‘lguningcha o‘rmaslikka harakat qil…</div>
+      </div>
+
+      <div id="storiesContainer">
+        <!-- hikoyalar shu yerda chiqadi -->
+      </div>
+
+      <div class="bottom-row">
+        <div class="bottom-btn">Izohlar</div>
+        <div class="bottom-btn">
+          <a href="admin.html" style="color: white; text-decoration: none"
+            >Admin paneliga kirish</a
+          >
+        </div>
+      </div>
     </div>
+
+    <script src="./js/stories.js"></script>
   </body>
 </html>
